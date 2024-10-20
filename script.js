@@ -44,10 +44,10 @@ function setWidgetBackground(weather) {
     const widget = document.querySelector('.weather-section');
     switch (weather) {
         case 'clear':
-            widget.style.backgroundImage = "url('images/clear-sky.jpg')";
+            widget.style.backgroundImage = "url('images/clear-sky.avif')";
             break;
         case 'clouds':
-            widget.style.backgroundImage = "url('images/cloudy.jpg')";
+            widget.style.backgroundImage = "url('images/cloudy.avif')";
             break;
         case 'rain':
         case 'drizzle':

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h1>Weather App</h1>
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="tables.html">Tables</a></li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            <header class="header">
+                <input type="text" id="city-input" placeholder="Enter City Name">
+                <button id="get-weather">Get Weather</button>
+                <div class="user-profile"></div>
+            </header>
+
+            <!-- Weather widget displaying current weather details -->
+            <section class="weather-section">
+                <div class="weather-overview">
+                    <h2 id="city-name">City Name</h2>
+                    <div class="temperature">
+                        <span id="temperature"></span>
+                        <span>°C</span>
+                    </div>
+                    <p id="description"></p>
+                    <div class="additional-info">
+                        <p>Feels Like: <span id="feels-like"></span>°C</p>
+                        <p>Humidity: <span id="humidity"></span>%</p>
+                        <p>Wind: <span id="wind-speed"></span> m/s</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Charts section (if you have charts) -->
+            <section class="charts-section">
+                <div class="chart-container">
+                    <canvas id="barChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <canvas id="doughnutChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <canvas id="lineChart"></canvas>
+                </div>
+            </section>
+
+            <!-- Chatbot widget section -->
+            <section class="chat-widget">
+                <div id="chat-bar">
+                    <input type="text" id="chat-input" placeholder="Ask a question">
+                    <button id="send-message">Send</button>
+                </div>
+                <div id="chat-response"></div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+    <script src="chatbot.js"></script>
+</body>
+</html>

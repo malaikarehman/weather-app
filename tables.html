@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h1>Weather App</h1>
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="tables.html">Tables</a></li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            <header class="header">
+                <input type="text" id="city-input" placeholder="Enter City Name">
+                <button id="get-weather">Get Weather</button>
+                <div class="user-profile"></div>
+            </header>
+        
+            <section class="main-section">
+                <section class="weather-section">
+                    <h3>5-Day Temperature Forecast</h3>
+        
+                    <!-- Filters for sorting and filtering -->
+                    <div class="filter-controls">
+                        <button id="sort-asc">Sort Ascending</button>
+                        <button id="sort-desc">Sort Descending</button>
+                        <button id="filter-rain">Show Rainy Days</button>
+                        <button id="highest-temp">Show Day with Highest Temp</button>
+                    </div>
+        
+                    <!-- Table with temperature forecast and pagination -->
+                    <table id="forecast-table" class="styled-table">
+                        <thead>
+                            <tr>
+                                <th>Day</th>
+                                <th>Morning</th>
+                                <th>Noon</th>
+                                <th>Evening</th>
+                                <th>Night</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- JavaScript will dynamically insert forecast rows here -->
+                        </tbody>
+                    </table>
+                    <div class="pagination-controls">
+                        <button id="prev-page">Previous</button>
+                        <button id="next-page">Next</button>
+                    </div>
+                </section>
+        
+                <section class="chat-widget">
+                    <div class="chat-container">
+                        <div class="chat-header">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <div id="chat-content" class="chat-content">
+                            <!-- Chat messages will be dynamically inserted here -->
+                        </div>
+                        <div class="chat-input-bar">
+                            <input type="text" id="chat-input" placeholder="Ask a question...">
+                            <button id="send-message">Send</button>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </main>
+        
+        
+        
+        
+    </div>
+    <script src="script.js"></script>
+    <script src="chatbot.js"></script>
+</body>
+</html>

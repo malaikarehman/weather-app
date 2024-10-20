@@ -23,7 +23,7 @@ The Weather Dashboard is a fully responsive web application built using HTML, CS
  Project Setup Instructions
 1. Clone the Repository:
    bash
-   git clone https://github.com/your-repository-url/weather-dashboard.git
+   https://github.com/malaikarehman/weather-app/
    cd weather-dashboard
    
 2. Obtain API Keys:
